@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>REGISTRARSE </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700"> 
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style type="text/css">
+        body{
+            background-image: url(images/fondo.png);
+
+        }
+
+        label{
+
+            color: white;
+
+        }
+
+
+    </style>
+</head>
+<body >
+   
+    <form action="../../CONTROLADOR/CONTROLADORCLIENTE/ControladorRegistro.php" method="post">
+    <div class="site-section">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-6 mb-5 mb-md-0">
+                    <h2 class="h3 mb-3 text-black">REGISTRO</h2>
+                    <div class="p-3 p-lg-5 border">
+                        
+                        <div class="form-group row">
+                            <div class="form-group col-md-12">
+                            <strong><label for="tdocumento" class="text-black">CLIENTE<span class="text-danger">*</span></label></strong>
+                            <select id="rol"  name="rol" class="form-control">
+                                <strong><option name="rol">CLIENTE</option></strong>   
+
+                            </select>
+                        </div>
+
+                            <div class="col-md-6">
+                                <strong><label for="c_fname" class="text-black">NOMBRE <span class="text-danger">*</span></label></strong>
+                                <input type="text" class="form-control" id="name" required name="name" autocomplete="off">
+                            </div>
+                            <div class="col-md-6">
+                                <strong><label for="c_fname" class="text-black">CIUDAD <span class="text-danger">*</span></label></strong>
+                                <input type="text" class="form-control" id="ciudad" required name="ciudad" autocomplete="off">
+                            </div>
+
+                            <div class="form-group col-md-12">
+                            <strong><label for="tdocumento" class="text-black">TIPO DE DOCUMENTO <span class="text-danger">*</span></label></strong>
+                            <select id="tdocumento"  name="tdocumento" class="form-control">
+                                <strong><option name="tdocumento">C.C</option></strong>   
+                                <strong><option name="tdocumento">T.I</option></strong>
+                                <strong><option name="tdocumento">Nit</option></strong>
+                            </select>
+                        </div>
+
+                            <div class="col-md-12">
+                               <strong> <label for="document" class="text-black">NÚMERO DE DOCUMENTO<span class="text-danger">*</span></label></strong>
+                                <input type="number" class="form-control" id="document" required name="document" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <strong><label for="c_companyname" class="text-black">CORREO ELECTRONICO</label>
+                                <input type="text" class="form-control" id="email" required name="email" placeholder="@" autocomplete="off"></strong>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <strong><label for="c_address" class="text-black">USUARIO <span class="text-danger">*</span></label></strong>
+                                <input type="text" class="form-control" id="nombre" required name="nombre" >
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <strong><label for="c_address" class="text-black">CONTRASEÑA <span class="text-danger">*</span></label></strong>
+                                <input type="password" class="form-control" id="pas" required name="pas" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <strong><label  class="text-black">VALIDAR CONTRASEÑA <span class="text-danger">*</span></label></strong>
+                                <input type="password" class="form-control" id="pas2" required name="pas2" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-lg py-3 btn-block" name="registrarse">Registrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+
+</body>
+</html>
